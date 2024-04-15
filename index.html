@@ -2,20 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h6>https://github.com/inbalmagen/240411_js_hm1.git</h6>
-
-    <h1>240411_js_hm1</h1>
-
-
+    
     <script>
-
-
-
-
-    </script>
+        /*a program that defines a number variable and prints if it is divisible by 3 and 4
+        Can be divided by 3
+        Can be divided by 4
+        */
+         
+        
+        let num = 24;
+        
+        if (num % 3 === 0 && num % 4 === 0) {
+            console.log(num + " is divisible by both 3 and 4");
+        } else if (num % 3 === 0) {
+            console.log(num + " can be divided by 3");
+        } else if (num % 4 === 0) {
+            console.log(num + " can be divided by 4");
+        } else {
+            console.log(num + " is not divisible by 3 or 4");
+        }
+        
+        
+        
+        
+            </script>
 </body>
 </html>
