@@ -14,21 +14,104 @@
         */
          
         
-        let num = 24;
-        
-        if (num % 3 === 0 && num % 4 === 0) {
-            console.log(num + " is divisible by both 3 and 4");
-        } else if (num % 3 === 0) {
-            console.log(num + " can be divided by 3");
-        } else if (num % 4 === 0) {
-            console.log(num + " can be divided by 4");
-        } else {
-            console.log(num + " is not divisible by 3 or 4");
-        }
-        
-        
-        
-        
-            </script>
+        let num = 98;
+
+if (num % 3 === 0 && num % 4 === 0) {
+    console.log(num + " is divisible by both 3 and 4");
+} 
+if (num % 3 === 0) {
+    console.log(num + " can be divided by 3");
+} 
+if (num % 4 === 0) {
+    console.log(num + " can be divided by 4");
+} 
+if (num % 3 !== 0 && num % 4 !== 0) {
+    console.log(num + " is not divisible by 3 or 4");
+}
+
+/*
+Write a program that takes a string as input and returns true
+if the length of the string is greater than 5 characters,
+otherwise returns false.
+*/
+
+let inputString = "is there anybody in there?";
+
+if (inputString.length > 5) {
+    console.log(true);
+} else {
+    console.log(false);
+}
+
+/*
+Write a function that takes a number as input and returns "Even" if the number is even,
+"Odd" if it's odd, and "Invalid input" if it's not a number.
+*/
+
+
+function checkEvenOrOdd(input) {
+    if (typeof input !== 'number' || isNaN(input)) {
+        return "Invalid input";
+    } else if (input % 2 === 0) {
+        return "Even";
+    } else {
+        return "Odd";
+    }
+}
+
+// Test the function with different inputs
+console.log(checkEvenOrOdd("7"));      // Output: "Odd"
+console.log(checkEvenOrOdd(12));     // Output: "Even"
+console.log(checkEvenOrOdd("Hello")); // Output: "Invalid input"
+
+/*
+Write a function that takes two boolean values and returns true
+if both values are true, otherwise returns false.
+*/
+
+// option 1
+function checkBothTrue(value1, value2) {
+    return value1 && value2;
+}
+
+// Test the function with different boolean values
+console.log(checkBothTrue(true, true));   // Output: true
+console.log(checkBothTrue(true, false));  // Output: false
+console.log(checkBothTrue(false, true));  // Output: false
+console.log(checkBothTrue(false, false)); // Output: false
+
+// option 2
+function checkBothTrue(value1, value2) {
+    return value1 && value2;
+}
+
+// Test the function with different boolean values
+console.log(checkBothTrue(1, 1));   // Output: true
+console.log(checkBothTrue(1, 0));   // Output: false
+console.log(checkBothTrue(0, 1));   // Output: false
+console.log(checkBothTrue(0, 0));   // Output: false
+
+// option 3
+function interpretBooleanSentence(sentence) {
+    const lowerCaseSentence = sentence.toLowerCase();
+    if (lowerCaseSentence === "yes" || lowerCaseSentence === "enable") {
+        return true;
+    } else if (lowerCaseSentence === "no" || lowerCaseSentence === "disable") {
+        return false;
+    } else {
+        return "Invalid input";
+    }
+}
+
+// Test the function with different sentences
+console.log(interpretBooleanSentence("Yes"));      // Output: true
+console.log(interpretBooleanSentence("No"));       // Output: false
+console.log(interpretBooleanSentence("Enable"));   // Output: true
+console.log(interpretBooleanSentence("Disable"));  // Output: false
+console.log(interpretBooleanSentence("Maybe"));    // Output: "Invalid input"
+
+
+
+</script>
 </body>
 </html>
