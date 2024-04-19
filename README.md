@@ -1,8 +1,8 @@
-# JavaScript Programs
+## JavaScript Programs
 
 This repository contains several JavaScript programs that demonstrate different functionalities.
 
-## Programs Included
+### Programs Included
 
 1. **Check Divisibility**: A program that defines a number variable and prints if it is divisible by 3 and 4, if it can be divided by 3, and if it can be divided by 4.
 
